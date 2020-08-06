@@ -1,0 +1,9 @@
+Run the following commands to install dependencies:
+    pip install requests
+    pip install pandas
+    pip install sodaypy
+
+
+Once these are installed, run the program using the following command
+in the terminal:
+    python3 -m show_open_food_trucks
