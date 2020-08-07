@@ -1,0 +1,11 @@
+In order to serve millions of concurrent users, I would store the data from the Socrata
+API into a local database. The data stored in the database would be the day of week string,
+start24, end24, address, and name. This way, the program would not be making multiple calls to 
+the API every time this program is used but would be stored locally on their machine. Since 
+the data is only a few hundred entries, it is reasonable to store it locally. When users request
+open food trucks, a database would allow the program to quickly filter the dataset for the 
+current day, using the "day of week" string. It can also determine the food trucks that are open 
+by comparing the current time to the start24 and end24 strings. This can be expanded by allowing
+users to specify a custom date and time. This would allow them to plan ahead for their trip to SF.
+The UI of this program would allow users to read from the local database. The local database can be
+updated daily, so users have up to date information about local food trucks. 

@@ -30,7 +30,7 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
 else:
-    print("Failed to retrieve data from ",url)
+    print("Failed to retrieve data from ", url)
 
 # Convert to pandas DataFrame
 results_df = pd.DataFrame.from_records(data)
@@ -58,9 +58,9 @@ def is_open(row):
     return False
 
 
-#prints 10 entries starting at index
-#returns -1 if all rows in results_df have been visited
-#returns next index in table once 10 food trucks are printed
+# prints 10 entries starting at index of results_df
+# returns -1 if all rows in results_df have been visited
+# returns next index in table once 10 food trucks are printed
 def print_page(index):
     total_rows = len(results_df.index)
     max_index = index + 10
