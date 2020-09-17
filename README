@@ -1,7 +1,7 @@
 Run the following commands to install dependencies:
     pip install requests
     pip install pandas
-    pip install sodaypy
+    pip install sodapy
 
 
 Once these are installed, run the program using the following command
@@ -20,4 +20,3 @@ Description:
     user to type "Y" or "N", until there is a valid input
     > Once all open food trucks are printed the program will print
     "You have viewed all open food trucks... goodbye!" and return
-    

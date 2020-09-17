@@ -65,6 +65,9 @@ def print_page(index):
     total_rows = len(results_df.index)
     max_index = index + 10
     while (True):
+        if (index == total_rows):
+            return -1
+        
         if(is_open(results_df.loc[index])):
             print_foodtruck_formatted(results_df.loc[index])
         else:
@@ -74,8 +77,6 @@ def print_page(index):
         
         if(index == max_index):
             return index
-        elif(index == total_rows):
-            return -1
 
 
 # prints 10 open food trucks at a time
